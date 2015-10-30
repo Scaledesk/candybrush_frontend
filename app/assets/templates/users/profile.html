@@ -1,0 +1,54 @@
+<div class="row">
+    <h1> Welcome {{profile.data.name}} </h1>
+    <p>Notification</p>
+    <div ng-repeat="n in notification.data"><p>{{n.text}}</p></div>
+    <a href="#/add_portfolio/?user_id={{profile.data.user_id}}">Add Portfolio</a>
+    <a href="#/uploadProfileImage">Upload Image</a>
+    <img src="{{profile.data.image}}" height="100" width="70"/>
+<h3>
+    {{response.message}}
+</h3>
+    <form ng-submit="updateUser(profile.data)">
+        <div>
+            Name:
+            <input type="text" name="name" id="name" ng-model="profile.data.name"  />
+        </div><br/>
+        <div>
+            Mobile:
+            <input type="text" name="mobile" id="mobile" ng-model="profile.data.mobile"  />
+        </div><br/>
+        <div>
+            Address:
+            <input type="text" name="address" id="address" ng-model="profile.data.address"  />
+        </div><br/>
+        <div>
+            State:
+            <input type="text" name="state" id="state" ng-model="profile.data.state"  />
+        </div><br/>
+        <div>
+            City:
+            <input type="text" name="city" id="city" ng-model="profile.data.city"  />
+        </div><br/>
+        <div>
+            Language Known:
+            <input type="text" name="language_known" id="language_known" ng-model="profile.data.language_known"  />
+        </div><br/>
+        <div>
+            Description:
+            <input type="text" name="description" id="description" ng-model="profile.data.description"  />
+        </div><br/>
+        <div>
+            Custom Message:
+            <input type="text" name="custom_message" id="custom_message" ng-model="profile.data.custom_message" />
+        </div><br/>
+        <div>
+            Date of Birth:
+            <input type="text" name="birth_date" id="birth_date" ng-model="profile.data.birth_date"  />
+        </div><br/>
+        <div>
+            <input type="Submit" name="submit" id="submit" value="Update"  />
+        </div><br/>
+
+    </form>
+
+</div>

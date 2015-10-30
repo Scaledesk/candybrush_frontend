@@ -1,0 +1,15 @@
+<h1>Add Category</h1>
+
+<form ng-submit="addCategory()">
+    <div>
+        Category Name: <input type="text" name="category" ng-model="newCategory.name" /> <br/>
+        Parent Category: <!--<select>
+        <span ng-repeat="c in category">
+            <option> </option>
+        </span>
+    </select>-->
+        <input type="text" name="parent_id" id="parent_id" ng-model="newCategory.parent_id" />
+        <br/>
+        <input type="submit" name="submit" value="Submit">
+    </div>
+</form>

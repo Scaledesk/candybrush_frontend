@@ -1,0 +1,12 @@
+
+<div class="row">
+    <form ng-submit="AuthenticateUser(loginData)" novalidate>
+        Email: <input type="email" placeholder="Email" name="email" ng-model="loginData.email"
+                      validation-field-required="{message:'field required', value: true}"
+                      validation-email="{message:'email required', value: true}"
+                     /> </br>
+        Password:<input type="password" placeholder="Password" name="password" ng-model="loginData.password"
+                        validation-field-required="{message:'password required', value: true}"/> </br>
+<input type="submit" value="Login"><a href="#/sendResetMail/">Forgot Password</a>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<h1>Add Bonus</h1>
+<h4><p>{{response.message}}</p></h4>
+<form>
+    <div ng-repeat="b in bonus">
+        Name: <input type="text" name="name" id="name" ng-model="b.name" /><br>
+        Description: <input type="text" name="description" id="description" ng-model="b.description" /><br>
+    </div>
+   <span ng-if="bonus.length < 2">
+    <button ng-click="newRow()">Add New</button>
+      </span>
+    <button ng-click="submitBonus()">Submit</button>
+    <!--<input type="submit" name="submit" id="submit" value="Submit" />-->
+</form>

@@ -1,0 +1,7 @@
+angular.module('NoteWrangler').factory('Category', function($resource){
+    return $resource('http://localhost:8000/api/category/:id', {id: "@id"}, {
+        update: {
+            method: "PUT"
+        }
+    });
+});

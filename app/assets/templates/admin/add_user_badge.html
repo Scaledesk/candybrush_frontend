@@ -1,0 +1,15 @@
+<h1>Assign  Badges to user </h1>
+<h4><p>{{msg}}</p></h4>
+<form>
+    <div>
+        <!--User: <input type="text" name="amount" id="amount" ng-model="transaction.amount" /><br>-->
+        Select Badges:
+        <select name="badge_id" id="badge_id" ng-model="badge.badge_id">
+        <option value="">select</option>
+        <option ng-repeat="option in badges.data" value="{{option.id}}">{{option.name}}</option>
+    </select><br/>
+        <br>
+    </div>
+    <button ng-click="assignBadges()">Submit</button>
+    <!--<input type="submit" name="submit" id="submit" value="Submit" />-->
+</form>

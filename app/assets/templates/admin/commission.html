@@ -1,0 +1,17 @@
+<h1>List of Commission Details</h1>
+<h4>{{msg}}</h4>
+<table width="700">
+    <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Commission</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="c in commission.data">
+        <td>{{c.user_id}}</td>
+        <td>{{c.username}}</td>
+        <td>{{c.commission}} </td>
+        <td><a href="#/add_commission?user_id={{c.user_id}}"> Add Commission</a> </td>
+    </tr>
+</table>
+

@@ -1,0 +1,17 @@
+<h1>List of Category</h1>
+<h4>{{response.message}}</h4>
+<h4><a href="#/add_category"> Add Category</a> </h4>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    <tr ng-repeat="c in category.data">
+        <td>{{c.id}}</td>
+        <td>{{c.name}}</td>
+        <td><button ng-click="deleteCategory(c)">Delete</button> </td>
+    </tr>
+</table>
+
+

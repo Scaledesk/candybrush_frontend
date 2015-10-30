@@ -1,0 +1,10 @@
+<div>
+    <p>{{response.message}}</p>
+    Name: {{package.data.name}}<br/>
+    Description:{{package.data.description}}<br/>
+    Price: {{package.data.price}}<br/>
+    Payment Type: <input type="text" name="payment_type" ng-model="newBooking.payment_type"/><br/>
+    User: <input type="text" name="user_id" ng-model="newBooking.user_id"/><br/><br/>
+    <button ng-click="orderBooking(package.data.id)">Book Now</button>
+
+</div>

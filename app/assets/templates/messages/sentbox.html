@@ -1,0 +1,11 @@
+<div ng-repeat="s in sentBox.data">
+    <p>
+        subject:{{s.subject}}<br/>
+        body:{{s.body}}<br/>
+        Send To:
+        <span ng-repeat="u in s.User.data">
+          {{u.name}},
+        </span>
+    </p>
+    <br/>
+</div>

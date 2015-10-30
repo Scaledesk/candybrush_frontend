@@ -1,0 +1,28 @@
+<!--<p>{{packages.data}}</p>-->
+<h1>Packages List</h1>
+<p>{{response.message}}</p>
+<div>
+    <label>Search: <input ng-model="searchText"></label>
+    <table width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Seller</th>
+            <th>Category</th>
+            <th>Action</th>
+
+        </tr>
+        <tr ng-repeat="package in packages.data | filter:searchText">
+            <td>{{package.name}}</td>
+            <td>{{package.description}}</td>
+            <td>{{package.price}}</td>
+            <td>{{package.seller.data.name}}</td>
+            <td>{{package.category.data.name}}</td>
+            <td>
+                <a ng-href="#/admin_packages/{{package.id}}">View Details</a>
+                <button ng-click="deletePackage(package.id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>

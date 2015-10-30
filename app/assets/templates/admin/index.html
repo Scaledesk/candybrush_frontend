@@ -1,0 +1,35 @@
+<h1>Users List</h1><h4><a href="#/admin_packages"> View Packages</a> </h4>
+<h4><a href="#/category"> View Category</a> </h4>
+<h4><a href="#/tags"> View Tag</a> </h4>
+<h4><a href="#/commission"> View Commission</a> </h4>
+
+<h4><a href="#/add_notification"> Add Notification</a> </h4>
+
+<!--<h4><a href="#/admin_packages"> View Packages</a> </h4>-->
+<p>{{response.message}}</p>
+<div>
+    <table cellspacing="10" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>
+                Action
+            </th>
+        </tr>
+        <tr ng-repeat="user in users.data">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>
+                <span ng-if="user.status==1">Activated</span>
+                <button ng-click="" ng-if="user.status ==0">ACtivate</button>
+            </td>
+            <td>
+                <button ng-click="">Delete</button>
+                <button ng-click="">View Profile</button>
+                <button ng-click="wallet(user.id)">Wallet</button>
+                <a href="#/add_user_badge/?user_id={{user.id}}">Add Badge</a>
+            </td>
+        </tr>
+    </table>
+</div>

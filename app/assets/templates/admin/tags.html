@@ -1,0 +1,19 @@
+<h1>List of Tags</h1>
+<h4>{{response.message}}</h4>
+<h4><a href="#/add_tag"> Add Tag</a> </h4>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+    <tr ng-repeat="c in tags.data">
+        <td>{{c.id}}</td>
+        <td>{{c.name}}</td>
+        <td>{{c.description}}</td>
+        <td><button ng-click="deleteTag(c)">Delete</button> </td>
+    </tr>
+</table>
+
+

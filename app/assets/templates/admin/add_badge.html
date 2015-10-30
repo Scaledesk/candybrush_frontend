@@ -1,0 +1,13 @@
+<h1>Add Badge</h1>
+<h2>{{msg}}</h2>
+<form>
+    <div>
+        Badge Name: <input type="text" name="category" ng-model="badge.name" /> <br/>
+        Choose Badge Image:
+        <div s3-upload bucket="'scaledesk'" ng-model="product.remote_product_file_url"
+             s3-upload-options="{getOptionsUri: 'http://localhost:8000/awsUpload', folder: 'images/'}">
+        </div>
+        <br/>
+        <button type="submit" name="submit" ng-click="submitBadge()">Submit</button>
+    </div>
+</form>

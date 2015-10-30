@@ -1,0 +1,44 @@
+
+<!--<a href="/#/add_package">Add Package</a>&nbsp;<a href="/#/add_addons">Add Addons</a>&nbsp;
+<a href="/#/add_bonus">Add Bonus</a>-->
+<div align="right">
+    <input type="text" name="search" id="search" ng-model="val" /><button ng-click="searchPackage()">Search</button>
+</div>
+
+<p>
+<h1>List of packages</h1>
+</p>
+        <label>Search: <input ng-model="searchText"></label>
+<p>
+{{response.message}}
+    <div ng-repeat="package in packages.data | filter:searchText">
+    Name: {{package.name}}<br/>
+    Description:{{package.description}}<br/>
+    Price: {{package.price}}<br/>
+    Deal_price: {{package.deal_price}}<br/>
+    Available Dates: {{package.available_date}}<br/>
+    Term Condition: {{package.term_condition}}<br/>
+    Payment Type: {{package.payment_type}}<br/>
+    Maximum Delevery Days: {{package.maximum_delivery_days}}<br/>
+    Category: {{package.category.data.name}}<br/>
+    Seller : {{package.seller.data.name}}<br/>
+    <h4>Addons</h4><br/>
+<span ng-repeat="addon in package.Addons.data">
+    Name:{{addon.name}}<br>
+    Description:{{addon.description}}<br>
+    Price:{{addon.price}}<br>
+    Days:{{addon.days}}<br><br/><br/>
+</span>
+    <h4>Bonus</h4><br/>
+<span ng-repeat="bonus in package.Bonus.data">
+    Name:{{bonus.name}}<br>
+    Description:{{bonus.description}}<br><br/><br/>
+</span>
+    <h4>Tag</h4><br/>
+<span ng-repeat="tag in package.Tags.data">
+    Name:{{tag.name}}<br>
+    Description:{{tag.description}}<br><br/>
+</span><br/>
+    <h3><p><a ng-href="#/booking/{{package.id}}">Book Now</a></p></h3>
+</div><br/>
+</p>

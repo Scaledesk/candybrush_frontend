@@ -1,0 +1,18 @@
+<h1>List of Badges</h1>
+<h4>{{msg}}</h4>
+<h4><a href="#/add_badge"> Add Badge</a> </h4>
+<table cellpadding="20" cellspacing="20">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+    </tr>
+    <tr ng-repeat="b in badges.data">
+        <td>{{b.id}}</td>
+        <td>{{b.name}}</td>
+        <td><img src="{{b.image_url}}" height="100" width="100"> </td>
+
+    </tr>
+</table>
+
+

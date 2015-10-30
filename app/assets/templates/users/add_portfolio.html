@@ -1,0 +1,15 @@
+
+<h1>Add Portfolio</h1>
+<p>{{msg}}</p>
+
+Description: <input type="text" name="portfolio_description" ng-model="nVal.portfolio_description"/><br/>
+File Type: <input type="text" name="portfolio_file_type" ng-model="nVal.portfolio_file_type"/><br/>
+
+
+Choose File:
+<div s3-upload bucket="'scaledesk'" ng-model="product.remote_product_file_url"
+     s3-upload-options="{getOptionsUri: 'http://localhost:8000/awsUpload', folder: 'images/'}">
+</div>
+<button ng-click="SubmitPortfolio()">Submit</button>
+
+

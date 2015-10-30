@@ -1,0 +1,10 @@
+<h1>Add Wallet</h1>
+<h4><p>{{response.message}}</p></h4>
+<form>
+    <div>
+        Amount: <input type="text" name="amount" id="amount" ng-model="transaction.amount" /><br>
+        Transaction Type: <input type="text" name="transaction_type" id="transaction_type" ng-model="transaction.transaction_type" /><br>
+    </div>
+    <button ng-click="walletTransaction()">Submit</button>
+    <!--<input type="submit" name="submit" id="submit" value="Submit" />-->
+</form>

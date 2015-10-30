@@ -1,0 +1,17 @@
+<h1>Add Packages</h1>
+<p>{{response.message}}</p>
+<form ng-submit="addPackage(packageData)">
+    Name: <input type="text" name="name" id="name" ng-model="packageData.name" /><br>
+    Description: <input type="text" name="description" id="description" ng-model="packageData.description" /><br>
+    User Id: <input type="text" name="user_id" id="user_id" ng-model="packageData.user_id" /><br>
+    Category : <!--<input type="text" name="category_id" id="category_id" ng-model="packageData.category_id" /><br>-->
+
+    <select name="category_id" id="category_id" ng-model="packageData.category_id">
+        <option value="">select</option>
+        <option ng-repeat="option in category.data" value="{{option.id}}">{{option.name}}</option>
+    </select><br/>
+
+    Tags_id: <input type="text" name="tags_id" id="tags_id" ng-model="packageData.tags_id" /><br>
+    <input type="submit" name="submit" id="submit" value="Save and Continue" />
+
+</form>

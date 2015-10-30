@@ -1,0 +1,15 @@
+<h1>Add Addons</h1>
+<h4><p>{{response.message}}</p></h4>
+<form>
+   <div ng-repeat="addon in addons">
+    Name: <input type="text" name="name" id="name" ng-model="addon.name" /><br>
+    Description: <input type="text" name="description" id="description" ng-model="addon.description" /><br>
+    Days: <input type="text" name="days" id="days" ng-model="addon.days" /><br>
+    Price: <input type="text" name="price" id="price" ng-model="addon.price" /><br><br>
+    </div>
+   <span ng-if="addons.length < 3">
+    <button ng-click="newRow()">Add New</button>
+      </span>
+    <button ng-click="submitAddons()">Submit</button>
+    <!--<input type="submit" name="submit" id="submit" value="Submit" />-->
+</form>

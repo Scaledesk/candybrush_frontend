@@ -1,0 +1,34 @@
+
+<div>
+    <p>{{response.message}}</p>
+    <form ng-submit="sendMessage(messageData)" novalidate>
+    <p>
+        User id
+    </p>
+    <p>
+        <input type="text" name="user_id" id="user_id" ng-model="messageData.user_id" />
+    </p>
+        <p>
+            Subject
+        </p>
+        <p>
+            <input type="text" name="subject" id="subject" ng-model="messageData.subject" />
+        </p>
+        <p>
+            Body
+        </p>
+        <p>
+            <input type="text" name="body" id="body" ng-model="messageData.body" />
+        </p>
+        <p>
+            Receiver Id
+        </p>
+        <p>
+            <input type="text" name="receivers_id" id="receivers_id" ng-model="messageData.receivers_id" />
+        </p>
+        <p>
+            <input type="Submit" name="Send" id="Send" value="Send" />
+        </p>
+    </form>
+
+</div>

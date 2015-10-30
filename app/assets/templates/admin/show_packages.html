@@ -1,0 +1,33 @@
+
+<h3>{{response.message}}</h3>
+
+<!--<p>{{package.data}}</p>-->
+Name: {{package.data.name}}<br/>
+Description:{{package.data.description}}<br/>
+Price: {{package.data.price}}<br/>
+Deal_price: {{package.data.deal_price}}<br/>
+Available Dates: {{package.data.available_date}}<br/>
+Term Condition: {{package.data.term_condition}}<br/>
+Payment Type: {{package.data.payment_type}}<br/>
+Maximum Delevery Days: {{package.data.maximum_delivery_days}}<br/>
+Category: {{package.data.category.data.name}}<br/>
+Seller : {{package.data.seller.data.name}}<br/>
+<h4>Addons</h4><br/>
+<span ng-repeat="addon in package.data.Addons">
+    Name:{{addon.name}}<br>
+    Description:{{addon.description}}<br>
+    Price:{{addon.price}}<br>
+    Days:{{addon.days}}<br><br/><br/>
+</span>
+<h4>Bonus</h4><br/>
+<span ng-repeat="bonus in package.data.Bonus">
+    Name:{{bonus.name}}<br>
+    Description:{{bonus.description}}<br><br/><br/>
+</span>
+<h4>Tag</h4><br/>
+<span ng-repeat="tag in package.data.Tags.data">
+    Name:{{tag.name}}<br>
+    Description:{{tag.description}}<br><br/><br/>
+</span>
+
+<button ng-click="deletePackage(package.data.id)">Delete</button>
