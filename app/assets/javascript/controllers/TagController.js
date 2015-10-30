@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('TagController', function(Tags, $scope, $location ){
+angular.module('CandyBrush').controller('TagController', function(Tags, $scope, $location ){
     $scope.tags = Tags.get();
     $scope.newTag = new Tags();
     $scope.deleteTag = function(d){

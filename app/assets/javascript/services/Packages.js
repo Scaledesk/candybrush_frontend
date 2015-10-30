@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').factory('Packages', function($http) {
+angular.module('CandyBrush').factory('Packages', function($http) {
     return {
         // get all the Packages
         get : function() {

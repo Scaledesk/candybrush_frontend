@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').factory('ForgotPassword', function($http) {
+angular.module('CandyBrush').factory('ForgotPassword', function($http) {
     return {
         // validate forgot password code
         validate : function(d) {

@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').factory('Activate', function($http) {
+angular.module('CandyBrush').factory('Activate', function($http) {
     return {
         // get all the Inbox Messages
         activate : function(data) {

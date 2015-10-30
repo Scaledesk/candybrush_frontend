@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('CommissionController', function(Commission, $scope, $location){
+angular.module('CandyBrush').controller('CommissionController', function(Commission, $scope, $location){
     $scope.commission = Commission.get();
     $scope.newCommission = new Commission();
     $scope.saveCommission = function(){

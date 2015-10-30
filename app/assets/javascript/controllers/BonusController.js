@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('BonusController', function(Bonus, $scope, $location){
+angular.module('CandyBrush').controller('BonusController', function(Bonus, $scope, $location){
     $scope.bonus = [new Bonus()];
     $scope.newRow = function()
     {

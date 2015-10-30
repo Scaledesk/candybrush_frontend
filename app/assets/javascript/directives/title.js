@@ -1,4 +1,4 @@
-angular.module("NoteWrangler").directive('title', function($timeout){
+angular.module("CandyBrush").directive('title', function($timeout){
   return function(scope, element, attrs) {
     $timeout(function(){
       $(element).tooltip()

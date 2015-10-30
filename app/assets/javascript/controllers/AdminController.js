@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('AdminController', function(Users, $scope, $location){
+angular.module('CandyBrush').controller('AdminController', function(Users, $scope, $location){
     $scope.users = Users.get();
     console.log($scope.users);
     $scope.ActivateUser=function()

@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('NotesEditController', function($scope,User, Note, Category, $routeParams, $location){
+angular.module('CandyBrush').controller('NotesEditController', function($scope,User, Note, Category, $routeParams, $location){
   $scope.note = Note.get({id: $routeParams.id})
   $scope.isSubmitting = false;
   $scope.categories = Category.query();

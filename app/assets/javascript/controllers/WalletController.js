@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('WalletController', function(Wallet, $scope, $location){
+angular.module('CandyBrush').controller('WalletController', function(Wallet, $scope, $location){
     $scope.transaction = new Wallet();
     $scope.walletTransaction=function()
     {

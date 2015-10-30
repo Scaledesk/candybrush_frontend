@@ -1,4 +1,4 @@
-angular.module('NoteWrangler', ['ngRoute', 'ngResource', 'ngS3upload', "ngGravatar", "directives.customvalidation.customValidationTypes"]).config(function(GravatarProvider){
+angular.module('CandyBrush', ['ngRoute', 'ngResource', 'ngS3upload', "ngGravatar", "directives.customvalidation.customValidationTypes"]).config(function(GravatarProvider){
   GravatarProvider.setSize(100);
 });
 /*

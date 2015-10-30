@@ -1,3 +1,3 @@
-angular.module('NoteWrangler').controller('UsersIndexController', function(User, $scope){
+angular.module('CandyBrush').controller('UsersIndexController', function(User, $scope){
   $scope.users = User.query();
 });

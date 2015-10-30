@@ -1,4 +1,4 @@
-angular.module('NoteWrangler')
+angular.module('CandyBrush')
 // inject the Activation service into our controller
     .controller('ResetPasswordController', function(ForgotPassword, $http, $scope, $location) {
         $scope.loading = true;

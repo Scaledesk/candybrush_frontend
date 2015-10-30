@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('PackageShowController', function(Package, Packages, $scope, $routeParams, $location){
+angular.module('CandyBrush').controller('PackageShowController', function(Package, Packages, $scope, $routeParams, $location){
     $scope.package = Package.get({id: $routeParams.id});
     $scope.deletePackage = function(p){
         Packages.adminDeletePackage(p)

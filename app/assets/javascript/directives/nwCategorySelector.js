@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').directive("nwCategorySelector", function(Category){
+angular.module('CandyBrush').directive("nwCategorySelector", function(Category){
   return {
     replace: true,
     restrict: "E",

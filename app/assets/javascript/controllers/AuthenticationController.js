@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('AuthenticationController', function(Authentication, $scope, $location){
+angular.module('CandyBrush').controller('AuthenticationController', function(Authentication, $scope, $location){
     //$scope.notes = Note.query();
     //$scope.search = {};
     $scope.authentication = new Authentication();

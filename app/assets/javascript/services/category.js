@@ -1,3 +1,3 @@
-angular.module('NoteWrangler').factory('Category', function($resource){
+angular.module('CandyBrush').factory('Category', function($resource){
   return $resource('/categories/:id');
 });

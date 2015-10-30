@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('NotificationController', function(Notification, $scope, $location){
+angular.module('CandyBrush').controller('NotificationController', function(Notification, $scope, $location){
    // $scope.notification = Notification.get();
     $scope.nVal = new Notification();
     $scope.submitNotification = function()

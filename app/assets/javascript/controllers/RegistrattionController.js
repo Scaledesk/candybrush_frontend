@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('RegistrationController', function(Registration, $scope){
+angular.module('CandyBrush').controller('RegistrationController', function(Registration, $scope){
     $scope.registration = new Registration();
     $scope.userRegistration = function(userData)
     {

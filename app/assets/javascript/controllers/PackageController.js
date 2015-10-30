@@ -1,4 +1,4 @@
-angular.module('NoteWrangler')
+angular.module('CandyBrush')
 // inject the Messages service into our controller
     .controller('PackageController', function(Packages, Category, $http, $scope, $location) {
         // loading variable to show the spinning loading icon

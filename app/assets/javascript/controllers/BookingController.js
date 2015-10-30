@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('BookingController', function(Package, Booking, $scope, $routeParams, $location){
+angular.module('CandyBrush').controller('BookingController', function(Package, Booking, $scope, $routeParams, $location){
     $scope.package = Package.get({id: $routeParams.id});
     $scope.newBooking = new Booking();
     $scope.orderBooking = function(id){

@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').config(function($routeProvider){
+angular.module('CandyBrush').config(function($routeProvider){
   $routeProvider
     .when('/', {
       redirectTo: '/packages'

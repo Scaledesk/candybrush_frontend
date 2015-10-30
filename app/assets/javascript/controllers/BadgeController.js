@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('BadgeController', function(Badge, Packages, $scope, $location){
+angular.module('CandyBrush').controller('BadgeController', function(Badge, Packages, $scope, $location){
     $scope.badges = Badge.get();
     $scope.badge = new Badge();
     $scope.$on('s3upload:success', function(event, response, url) {

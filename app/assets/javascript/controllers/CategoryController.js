@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('CategoryController', function(Category, $scope, $location ){
+angular.module('CandyBrush').controller('CategoryController', function(Category, $scope, $location ){
     $scope.category = Category.get();
     $scope.newCategory = new Category();
     $scope.deleteCategory = function(d){

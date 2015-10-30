@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('UsersProfileController', function(Profile, Notification, Portfolio, $scope){
+angular.module('CandyBrush').controller('UsersProfileController', function(Profile, Notification, Portfolio, $scope){
     $scope.profile = Profile.get();
     $scope.portfolio = Portfolio.get();
     $scope.notification = Notification.get();

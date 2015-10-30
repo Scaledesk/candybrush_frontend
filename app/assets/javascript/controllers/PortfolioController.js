@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('PortfolioController', function(Portfolio, $scope, $location){
+angular.module('CandyBrush').controller('PortfolioController', function(Portfolio, $scope, $location){
     $scope.Portfolio = Portfolio.get();
     $scope.nVal = new Portfolio();
     $scope.submitNotification = function()

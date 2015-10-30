@@ -1,4 +1,4 @@
-angular.module("NoteWrangler").directive('nwPageNav', function(){
+angular.module("CandyBrush").directive('nwPageNav', function(){
   return {
     replace: true,
     restrict: "E",

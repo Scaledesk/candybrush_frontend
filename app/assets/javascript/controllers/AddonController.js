@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('AddonController', function(Addon, $scope, $location){
+angular.module('CandyBrush').controller('AddonController', function(Addon, $scope, $location){
     $scope.addons = [new Addon()];
     $scope.newRow = function()
     {

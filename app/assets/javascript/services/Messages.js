@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').factory('Messages', function($http) {
+angular.module('CandyBrush').factory('Messages', function($http) {
     return {
         // get all the Inbox Messages
         get : function() {
