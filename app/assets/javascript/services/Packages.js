@@ -71,8 +71,13 @@ angular.module('CandyBrush').factory('Packages', function($http) {
                 method: 'post',
                 url: 'http://localhost:8000/api/user/'+user_id+'/badge/'+badge_id
             });
-        }
-
+        },
+        nextpage : function(id) {
+        return $http({
+            method: 'get',
+            url: 'http://localhost:8000/api/package/?orderBy=id&page='+id
+        });
+      }
 
 
         // destroy a Package

@@ -4,13 +4,28 @@ angular.module('CandyBrush')
         // loading variable to show the spinning loading icon
         $scope.loading = true;
         $scope.val;
+        $scope.page_number = 1;
         $scope.category = Category.get();
         // get all packages
         Packages.get()
             .success(function(data) {
                 $scope.packages = data;
+                console.log(data);
                 $scope.loading = false;
             });
+
+        $scope.paginationCall = function()
+        {
+            $scope.page_number = $scope.page_number+1;
+            Packages.nextpage($scope.page_number)
+                .success(function(data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        $scope.packages.data.push(data.data);
+                    }
+                });
+
+        };
         // add package
         $scope.addPackage = function(packageData) {
             $scope.loading = true;

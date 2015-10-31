@@ -3,11 +3,6 @@ angular.module('CandyBrush').config(function($routeProvider){
     .when('/', {
       redirectTo: '/packages'
     })
-
-    .when('/notes', {
-      templateUrl: "assets/templates/notes/index.html",
-      controller: "NotesIndexController"
-    })
       .when('/login', {
       templateUrl: "assets/templates/authentication/login.html",
       controller: "AuthenticationController"
