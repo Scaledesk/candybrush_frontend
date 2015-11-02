@@ -1,12 +1,58 @@
-
 <div class="row">
-    <form ng-submit="AuthenticateUser(loginData)" novalidate>
-        Email: <input type="email" placeholder="Email" name="email" ng-model="loginData.email"
-                      validation-field-required="{message:'field required', value: true}"
-                      validation-email="{message:'email required', value: true}"
-                     /> </br>
-        Password:<input type="password" placeholder="Password" name="password" ng-model="loginData.password"
-                        validation-field-required="{message:'password required', value: true}"/> </br>
-<input type="submit" value="Login"><a href="#/sendResetMail/">Forgot Password</a>
-    </form>
+    <div class="col-md-4 center">
+        <div class="login-box panel panel-white">
+            <div class="panel-body">
+                <a href="index.html" class="logo-name text-lg text-center">Login with Zolo</a>
+
+                <p class="text-center m-t-md" style="margin-top: 5px;">Lorem ipsum dolor sit amet!</p>
+
+                <form class="m-t-md" name="myForm" ng-submit="AuthenticateUser(loginData)" novalidate>
+                    <p><h3> {{msg}}</h3></p><br/>
+                    <div class="input-group m-b-sm">
+
+                        <span class="input-group-addon" id="basic-addon3"><img src="https://maxcdn.icons8.com/iOS7/PNG/25/Messaging/message-25.png" title="Message" width="20"></span>
+                        <input style="
+    border-radius: 0px 4px 4px 0px;
+" type="text" name="email" id="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" ng-model="loginData.email">
+                        <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+        <span ng-show="myForm.email.$error.required">Email is required.</span>
+        <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+        </span>
+                    </div>
+                    <div class="input-group m-b-sm">
+                        <span class="input-group-addon" id="basic-addon2"><img src="https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/key-25.png" title="Key" width="20"></span>
+                        <input style="
+    border-radius: 0px 4px 4px 0px;
+" type="password" name="password" id="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" ng-model="loginData.password">
+    <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+        <span ng-show="myForm.password.$error.required">Password is required.</span>
+            <span ng-show="myForm.password.$error.minlength">Password must be greater than 6 character .</span>
+        </span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block m-t-xs" style="font-weight: 500;border-radius: 4px;height: 43px;font-size: 18px;">Login</button>
+                    <div style='background: transparent url("https://cdnil20.fiverrcdn.com/assets/v2_backgrounds/bg-1px-grey-divi-437f1a1ff5ca3ab9db09cb43bbfbc380.png") repeat-x left 9px;
+    text-align: center;
+    height: 16px;
+    padding-bottom: 20px;margin-top: 15px;'><span style="background-color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: lowercase;
+
+    padding: 0 10px;">Or connect with</span></div>
+
+                    <div class="row" align="center" style="padding-top: 15px;">
+                        <div>
+                            <img src="img/social.png">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="panel-footer" style="padding-top: 0px;padding-bottom: 10px;">
+                <p style="margin-bottom: 0px" class="text-center m-t-xs text-sm"><a href="#/sendResetMail">Forget Password</a> Don't have a zolo account?  <a href="login.html" >Sign Up</a></p>
+
+            </div>
+        </div>
+    </div>
 </div>

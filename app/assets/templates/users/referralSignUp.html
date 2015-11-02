@@ -16,7 +16,6 @@
         <span ng-show="myForm.password.$error.required">Password is required.</span>
             <span ng-show="myForm.password.$error.minlength">Password must be greater than 6 character .</span>
         </span> </br>
-
         Confirm P: <input type="password" placeholder="Confirm Password" name="password_confirmation" ng-model="nVal.password_confirmation" minlength="6" />
         <span style="color:red" ng-show="myForm.password_confirmation.$dirty && myForm.password_confirmation.$invalid">
         <span ng-show="myForm.password_confirmation.$error.required">Confirm password must be is required.</span>

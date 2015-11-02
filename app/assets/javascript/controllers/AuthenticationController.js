@@ -12,6 +12,8 @@ angular.module('CandyBrush').controller('AuthenticationController', function(Aut
             console.log(window.localStorage['token']);
             $location.path("/profile");
 
+        }, function(error){
+            $scope.msg = "email or password do not match";
         });
     }
 });
