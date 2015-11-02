@@ -8,6 +8,14 @@
 <h3>
     {{response.message}}
 </h3>
+
+    <div>
+        <h2>Referred a friend</h2><br/>
+        Email <input type="email" name="email" ng-model="dt.email"/><button name="referred" ng-click="referredFriend(dt)">Referred</button>
+
+    </div>
+
+
     <form ng-submit="updateUser(profile.data)">
         <div>
             Name:

@@ -9,7 +9,7 @@
 <h1>List of packages</h1>
 </p>
         <label>Search: <input ng-model="searchText"></label>
-<div infinite-scroll="paginationCall()" infinite-scroll-distance='2'>
+<div infinite-scroll="paginationCall()" infinite-scroll-distance='0' infinite-scroll-disabled="">
 {{response.message}}
     <div ng-repeat="package in packages.data | filter:searchText">
     Name: {{package.name}}<br/>

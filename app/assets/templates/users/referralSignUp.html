@@ -1,0 +1,27 @@
+<h1>Sign Up</h1><br/>
+
+<p>{{msg}}</p>
+
+<div class="row">
+    <h4>{{response.message}}</h4>
+
+    <form name="myForm" ng-submit="referralSignUp()" novalidate>
+        Name: <input type="text" placeholder="Name" name="name" ng-model="nVal.name" required/>
+        <span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
+        <span ng-show="myForm.name.$error.required">User Name is required.</span>
+        </span> </br>
+
+        Password:<input type="password" placeholder="Password" name="password" ng-model="nVal.password" minlength="6" />
+        <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+        <span ng-show="myForm.password.$error.required">Password is required.</span>
+            <span ng-show="myForm.password.$error.minlength">Password must be greater than 6 character .</span>
+        </span> </br>
+
+        Confirm P: <input type="password" placeholder="Confirm Password" name="password_confirmation" ng-model="nVal.password_confirmation" minlength="6" />
+        <span style="color:red" ng-show="myForm.password_confirmation.$dirty && myForm.password_confirmation.$invalid">
+        <span ng-show="myForm.password_confirmation.$error.required">Confirm password must be is required.</span>
+            <span ng-show="myForm.password_confirmation.$error.minlength">Password must be greater than 6 character .</span>
+        </span> </br>
+        <input type="submit" value="Signup">
+    </form>
+</div>

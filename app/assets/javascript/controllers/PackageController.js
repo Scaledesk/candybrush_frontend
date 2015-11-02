@@ -21,7 +21,7 @@ angular.module('CandyBrush')
                 .success(function(data) {
                     console.log(data);
                     for (var i = 0; i < data.length; i++) {
-                        $scope.packages.data.push(data.data);
+                        $scope.packages.data.push(data.data[i]);
                     }
                 });
 
