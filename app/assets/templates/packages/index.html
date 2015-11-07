@@ -27,18 +27,23 @@
     Name:{{addon.name}}<br>
     Description:{{addon.description}}<br>
     Price:{{addon.price}}<br>
-    Days:{{addon.days}}<br><br/><br/>
+    Days:{{addon.days}}<br><br/>
 </span>
     <h4>Bonus</h4><br/>
 <span ng-repeat="bonus in package.Bonus.data">
     Name:{{bonus.name}}<br>
-    Description:{{bonus.description}}<br><br/><br/>
+    Description:{{bonus.description}}<br><br/>
 </span>
     <h4>Tag</h4><br/>
 <span ng-repeat="tag in package.Tags.data">
     Name:{{tag.name}}<br>
     Description:{{tag.description}}<br><br/>
-</span><br/>
-    <h3><p><a ng-href="#/booking/{{package.id}}">Book Now</a></p></h3>
-</div><br/>
+</span>
+        <h4>Photo</h4><br/>
+<span ng-repeat="img in package.photos.data">
+    <img src="img.url"/>
+    Name:{{img.name}}<br/>
+</span>
+        <h3><p><a ng-href="#/booking/{{package.id}}">Book Now</a></p></h3>
 </div>
+</div><br/><br/><br/>

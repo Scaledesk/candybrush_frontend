@@ -8,8 +8,7 @@
 
                 <form class="m-t-md" name="myForm" novalidate>
                     <h4>{{response.message}}</h4>
-
-                    <div class="input-group m-b-sm">
+                    <div class="input-group m-b-sm" ng-class="{ 'has-error' : myForm.name.$invalid && !myForm.name.$pristine }">
                         <span class="input-group-addon" id="basic-addon1"><img
                                 src="https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/contacts-25.png" title="Contacts"
                                 width="20"></span>
@@ -22,7 +21,7 @@
                     <span ng-show="myForm.name.$error.minlength" class="help-block">Username is too short.</span>
                     <span ng-show="myForm.name.$error.maxlength" class="help-block">Username is too long.</span>
 
-                    <div class="input-group m-b-sm">
+                    <div class="input-group m-b-sm" ng-class="{ 'has-error' : myForm.email.$invalid && !myForm.email.$pristine }">
                         <span class="input-group-addon" id="basic-addon3"><img
                                 src="https://maxcdn.icons8.com/iOS7/PNG/25/Messaging/message-25.png" title="Message"
                                 width="20"></span>
@@ -33,7 +32,7 @@
                     </div>
                     <span ng-show="myForm.email.$invalid && !myForm.email.$pristine" class="help-block"> Valid email  required!</span>
 
-                    <div class="input-group m-b-sm">
+                    <div class="input-group m-b-sm" ng-class="{ 'has-error' : myForm.password.$invalid && !myForm.password.$pristine }">
                         <span class="input-group-addon" id="basic-addon2"><img
                                 src="https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/key-25.png" title="Key"
                                 width="20"></span>
@@ -45,7 +44,7 @@
                     </div>
                     <span ng-show="myForm.password.$invalid && !myForm.password.$pristine" class="help-block"> Password must be greater than 6 charector and less than 10 charector!</span>
 
-                    <div class="input-group m-b-sm">
+                    <div class="input-group m-b-sm" ng-class="{ 'has-error' : myForm.confirm_password.$invalid && !myForm.confirm_password.$pristine }">
                         <span class="input-group-addon" id="basic-addon"><img
                                 src="https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/key-25.png" title="Key"
                                 width="20"></span>

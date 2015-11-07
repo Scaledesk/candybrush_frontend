@@ -13,9 +13,10 @@ angular.module('CandyBrush').controller('RegistrationController', function(Regis
             toaster.pop({
                 type: 'success',
                 title: 'You have successfully registered with zolo!',
-                body: 'Thank you for sign up enjoy our services. ',
+                body: 'Go to your email account and verify to enjoy our services. ',
                 showCloseButton: true
             });
+                $location.path("/packages");
         },
         function(data){
                 toaster.pop({
